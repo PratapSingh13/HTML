@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding: 15px;
+          text-align: center;
+          border-spacing: 50px;
+        }
+    </style>
     <title>Table Introduction</title>
 </head>
 <body>
     <h2> Basic HTML table</h2>
     <table style="width: 100%">
+        <caption>Employee Information</caption>
         <tr>
             <th>
                 First Name
@@ -16,16 +26,23 @@
             <th>
                 Age
             </th>
+            <th colspan="2">
+                Mobile
+            </th>
         </tr>
         <tr>
             <td>Jill</td>
             <td>Smith</td>
             <td>50</td>
+            <td>12345</td>
+            <td>33333</td>
         </tr>
         <tr>
             <td>John</td>
             <td>Doe</td>
             <td>80</td>
+            <td>11111</td>
+            <td>22222</td>
         </tr>
     </table>
 </body>
