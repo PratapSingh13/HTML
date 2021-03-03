@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .city {
+            background-color: tomato;
+            color: aliceblue;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+    <title>Classes in HTML</title>
+</head>
+<body>
+    <div class="city">
+        <h2>New Delhi</h2>
+        <p>New Delhi is the capital of India</p>
+    </div>
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France</p>
+    </div>
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is tha capital of Japan</p>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementsByClassName("city");
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+    }
+    </script>
+    <button onclick="myFunction()">Hide elements</button>
+</body>
+</html>
