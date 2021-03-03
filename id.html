@@ -14,5 +14,12 @@
 <body>
     <h2>This is ID attribute</h2>
     <h1 id="myID">My ID</h1>
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+    <script>
+        function displayResult() {
+          document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+    </script>
 </body>
 </html>
